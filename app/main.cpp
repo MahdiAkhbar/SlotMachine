@@ -24,10 +24,10 @@ int main()
             std::cout << "You did not enter a valid bet." << '\n';
             else
             break;
-          }//while (bet > chips || bet <= 0);
-          rand1 = 2;//Random(2, 7);
-          rand2 = 3;//Random(2, 7);
-          rand3 = 4;//Random(2, 7);
+          }
+          rand1 = Random(2, 7);
+          rand2 = Random(2, 7);
+          rand3 = Random(2, 7);
           bool seven = rand1 == 7 && rand2 == 7 && rand3 == 7;
           bool three = !seven && (rand1 == rand2 && rand1 == rand3 && rand2 == rand3);
           bool two   = (rand1 == rand2) || (rand1 == rand3) || (rand2 == rand3);
@@ -60,7 +60,6 @@ int main()
   return 0;
 }
 int Random(int low, int high){
-  srand(time(0));
   int random = low + rand() % ((high + 1) - low);
   return random;
 }
