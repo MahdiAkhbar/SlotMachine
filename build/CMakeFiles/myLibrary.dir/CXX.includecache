@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Foo.h
+
+/home/mahdi26/github/Eaglet/SlotMachine/src/Foo.cpp
+Foo.h
+/home/mahdi26/github/Eaglet/SlotMachine/src/Foo.h
+
